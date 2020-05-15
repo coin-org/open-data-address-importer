@@ -29,7 +29,7 @@ public class JusomanagerService {
 		
 		File zipFile = downloadZip(type);
 		
-		List<String> filePathList = extractZip(zipFile);
+		List<String> filePathList = transformGeographic(zipFile);
 		
 		for (String filePath : filePathList) {
 			insertToDB(filePath);
@@ -42,12 +42,25 @@ public class JusomanagerService {
 		
 	}
 
-	private List<String> extractZip(File zipFile) throws IOException {
+	/**
+	 * ZIP 파일내에 있는 주소 데이터 파일들을 읽고 좌표계 변환값(GRS80 -> WGS84)을 구한다. 
+	 * @param zipFile
+	 * @return
+	 * @throws IOException
+	 */
+	private List<String> transformGeographic(File zipFile) throws IOException {
 		ZipFile zip = new ZipFile(zipFile);
 		
+		zip.
 		return null;
 	}
 
+	/**
+	 * 크롤링을 통해 ZIP파일 형태의 공공 주소 데이터를 다운로드한다.
+	 * @param type A: 전체, A 외: 변동분
+	 * @return
+	 * @throws IOException
+	 */
 	private File downloadZip(String type) throws IOException {
 		
 		WebClient webClient = new WebClient();
