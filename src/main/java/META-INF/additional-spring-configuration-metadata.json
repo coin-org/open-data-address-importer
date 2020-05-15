@@ -1,0 +1,7 @@
+{"properties": [
+  {
+    "name": "juso.url",
+    "type": "java.lang.String",
+    "description": "크롤링을 위한 주소"
+  }
+]}

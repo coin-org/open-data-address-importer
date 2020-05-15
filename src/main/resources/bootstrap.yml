@@ -1,0 +1,1 @@
+spring:  application:    name: jusomanager  cloud:    config:      uri: http://localhost:8081  datasource:    url: jdbc:postgresql://happyjoy1234.asuscomm.com:5432/juso    username: postgres    password: password      juso:  url: http://www.juso.go.kr/addrlink/addressBuildDevNew.do?menu=geodata
