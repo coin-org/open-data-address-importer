@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.coin</groupId>
-	<artifactId>jusomanager</artifactId>
+	<artifactId>open-data-address-importer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>jusomanager</name>
-	<description>전국 주소 관리</description>
+	<name>open-data-address-importer</name>
+	<description>공공 주소 데이터를 다운 / DB Insert</description>
 
 	<properties>
 		<java.version>1.8</java.version>
