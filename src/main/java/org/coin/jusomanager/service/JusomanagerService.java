@@ -76,9 +76,8 @@ public class JusomanagerService {
 	/**
 	 * Zip 파일의 압축을 푼다.
 	 *
-	 * @param zipFile             - 압축 풀 Zip 파일
+	 * @param file                - 파일
 	 * @param targetDir           - 압축 푼 파일이 들어간 디렉토리
-	 * @param fileNameToLowerCase - 파일명을 소문자로 바꿀지 여부
 	 * @return
 	 * @throws Exception
 	 */
@@ -131,7 +130,7 @@ public class JusomanagerService {
 	 * Zip 파일의 한 개 엔트리의 압축을 푼다.
 	 *
 	 * @param is       - Input Stream
-	 * @param filePath - 압축 풀린 파일의 경로
+	 * @param targetFile - 압축 풀린 파일
 	 * @return
 	 * @throws Exception
 	 */
