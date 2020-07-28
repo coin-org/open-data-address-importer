@@ -25,6 +25,8 @@ import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 
+import javax.transaction.Transactional;
+
 @Service
 public class JusomanagerService {
 
@@ -63,6 +65,7 @@ public class JusomanagerService {
 					jusoList.add(juso);
 					if (jusoList.size() == 10000) {
 						jusoRepository.saveAll(jusoList);
+						jusoRepository.flush();
 						jusoList.clear();
 					}
 				}
